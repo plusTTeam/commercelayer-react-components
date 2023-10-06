@@ -30,7 +30,7 @@ export type TResourceError =
   | 'variant'
   | 'in_stock_subscriptions'
 type ErrorChildrenComponentProps = ChildrenFunction<
-  Omit<TErrorComponent, 'children'> & { errors: string[] }
+  Omit<TErrorComponent, 'children'> & { errors: string[]; allErrors: any[] }
 >
 
 export interface TErrorComponent
